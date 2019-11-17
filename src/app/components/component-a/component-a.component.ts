@@ -7,9 +7,14 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ComponentAComponent implements OnInit {
 
+  @Input() name: String;
+  //An event the component can trigger
+  @Output() myEvent: EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
